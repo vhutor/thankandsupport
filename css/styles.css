@@ -206,9 +206,9 @@ header {
 
 .icons-list {
   display: flex;
-  gap: 30px;
-  margin-top: 10px;
-  justify-content: center;
+  justify-content: space-between;
+  width: 90px;
+  margin: 10px auto;
 }
 
 .shine-btn {
