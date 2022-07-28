@@ -1,18 +1,140 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="favicon.ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap"
+      rel="stylesheet"
+    />
     <title>Дякую ЗСУ</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg border-bottom bg-white sticky-top shadow-sm justify-content-between navbar-light" id="bs-menu-nav">
+    <header>
+      <a class="team-link" href="./#contacts-section">Контакти</a>
+      <img class="heart-icon" src="./images/military2.svg" />
+      <a class="support-btn" href="./#support-section">Подякуй і підтримай</a>
+    </header>
+    <section id="info-section">
+      <div class="info-text">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero delectus itaque
+          cupiditate minus praesentium quisquam! Excepturi maxime, quos nostrum dolorum
+          dolore aspernatur at exercitationem tempore odio ea. Corporis, dicta
+          necessitatibus?
+        </p>
+      </div>
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/msizPweg3kE"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope;"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+    </section>
+    <section id="support-section">
+      <div class="info-text">
+        <h1>Подякуй та підтримай ЗСУ!</h1>
+        <ul>
+          <li>Крок 1: Заповни форму</li>
+          <li>Крок 2: Закинь в моно банку суму від 700грн</li>
+          <li>Крок 3: Надішли організаторам скріншот успішного донату</li>
+          <li>Крок 4: Забери футболку з пошти орієнтовно через 7 днів</li>
+        </ul>
+        <div class="donation-block">
+          <a
+            href="https://forms.gle/FhYBbHFWQE5saGzGA"
+            target="_blank"
+            class="support-btn shine-btn"
+            >Заповнити форму</a
+          >
+          <a
+            class="mono-link"
+            href="https://send.monobank.ua/jar/2NWFNrN7u2"
+            target="_blank"
+            >Mono<img class="mono-icon" src="./images/military4.svg" alt="monobank"
+          /></a>
+        </div>
+      </div>
+    </section>
+    <section id="contacts-section">
+      <h3>Організатори</h3>
+      <p>Пишіть нам з будь-яких питань</p>
+      <ul class="contacts-list">
+        <li>
+          <span class="contact-img img1"></span>
+          <div>
+            <p class="contact-name">Валерія</p>
+            <p class="contact-role">дякує та допомагає ЗСУ</p>
+            <ul class="icons-list">
+              <li>
+                <a
+                  class="icon-insta"
+                  href="https://www.instagram.com/delta_vh"
+                  target="_blank"
+                ></a>
+              </li>
+              <li>
+                <a class="icon-telegram" href="https://t.me/delta_vh" target="_blank"></a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <span class="contact-img img2"></span>
+          <div>
+            <p class="contact-name">Влад</p>
+            <p class="contact-role">дякує та допомагає ЗСУ</p>
+            <ul class="icons-list">
+              <li>
+                <a
+                  class="icon-insta"
+                  href="https://www.instagram.com/deputat.vlad"
+                  target="_blank"
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="icon-telegram"
+                  href="https://t.me/Vlad_Deputat"
+                  target="_blank"
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <span class="contact-img img3"></span>
+          <div>
+            <p class="contact-name">Орися</p>
+            <p class="contact-role">дякує та допомагає ЗСУ</p>
+            <ul class="icons-list">
+              <li>
+                <a
+                  class="icon-insta"
+                  href="https://www.instagram.com/o.r.y.s.i.a"
+                  target="_blank"
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="icon-telegram"
+                  href="https://t.me/o_r_y_s_i_a"
+                  target="_blank"
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- <nav class="navbar navbar-expand-lg border-bottom bg-white sticky-top shadow-sm justify-content-between navbar-light" id="bs-menu-nav">
       <div class="container-fluid">
         <div class="justify-content-center">
             <ul class="navbar-nav">
@@ -34,29 +156,28 @@
           </ul>
         </div>
       </div>
-    </nav>
-      <!-- <div id="info-section"> -->
-      <div>
+    </nav> -->
+    <!-- <div id="info-section"> -->
+    <!-- <div>
         <h1>ДЯКУЮ</h1>
         <h1>ПІДТРИМУЮ</h1>
         <h1>ДОНАЧУ</h1>
         <h3>Всі додаткові деталі та інформацію шукай на сторінках організаторів</h3>
       </div>
-      <div id="video-section" class="video-container">
-        <iframe
+      <div id="video-section" class="video-container"> -->
+    <!-- <iframe
             src="https://www.youtube.com/embed/msizPweg3kE"
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope;"
             allowfullscreen>
-        </iframe>
-      </div>
+        </iframe> -->
+    <!-- </div>
       <div class="goal-section">
         <h1>Наша перша ціль - купити пікап для такої то там бригади</h1>
         <h1>Всі звіти знайдеш на сторінках організаторів</h1>
       </div>
       <div class="team-section">
         <h1>Наша команда</h1>
-      </div>
-
+      </div> -->
   </body>
 </html>

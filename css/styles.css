@@ -1,24 +1,117 @@
-h1, h3 {
-  font-family: 'Pangolin', cursive;
-  font-size: 100px;
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+* {
+  outline: 1px solid tomato;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #454545;
+  font-family: "Pangolin", cursive;
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 0.04em;
+}
+
+ul,
+ol,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 a {
-  font-family: 'Pangolin', cursive;
-
+  text-decoration: none;
+  color: #454545;
 }
 
-.military-icon {
-  width: 70px;
+header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  padding: 15px 40px;
+  background-color: #fff;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 5px 17px 4px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.team-link {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
   height: 70px;
+  margin-right: 50px;
+  font-weight: 600;
 }
 
 .heart-icon {
-  width: 100px;
-  height: 100px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 150px;
 }
 
+.support-btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  font-weight: 600;
+  border-radius: 15px;
+  color: #ffffff;
+  background-color: green;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
 
+.support-btn:hover {
+  background-color: rgb(0, 110, 0);
+  box-shadow: 2px 5px 16px 0px #061c35, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+#info-section {
+  padding-top: 100px;
+}
+
+.info-text {
+  display: block;
+  max-width: 70%;
+  padding: 40px 0;
+  margin: 0 auto;
+}
 
 .video-container {
   position: relative;
@@ -34,27 +127,190 @@ a {
   height: 100%;
 }
 
-#info-section {
-   position: absolute;
-   text-align: center;
-   display: flex;
-   flex-direction: column;
-   top: 50%;
-   left: 50%;
-   width: 400px;
-   height: 300px;
-   margin-top: -150px;
-   margin-left: -200px;
+#support-section {
+  background-color: #c0bd92;
+  color: black;
 }
 
-.heart {
-  width: 150px;
-  height: 150px;
+#support-section h1 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.body-container {
+#support-section li {
+  margin-top: 10px;
+}
+
+.mono-link {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 100%;
+  align-items: center;
+}
+
+.mono-icon {
+  width: 100px;
+  height: 100px;
+  animation: shake-with-delay 3s ease-in-out infinite;
+}
+
+.mono-icon:hover {
+  animation: shake 1.5s ease-in-out infinite;
+}
+
+.donation-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+#contacts-section {
+  padding: 40px;
+  text-align: center;
+}
+
+.contacts-list {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+#contacts-section li {
+  max-width: 200px;
+}
+
+.contact-img {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-size: cover;
+  background-position: 0 -20px;
+  background-repeat: no-repeat;
+}
+.img1 {
+  background-image: url(../images//Lera.jpg);
+}
+.img2 {
+  background-position: 0 -55px;
+  background-image: url(../images//Vlad.jpg);
+}
+.img3 {
+  background-image: url(../images//Orysia.jpg);
+}
+
+.contact-name {
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.contact-role {
+  font-size: 16px;
+}
+
+.icons-list {
+  display: flex;
+  gap: 30px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.shine-btn {
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.shine-btn:before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  top: -180px;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  background-color: #fff;
+  animation: shiny-btn 5s ease-in-out infinite;
+}
+.shine-btn:active {
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.3),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.icon-insta {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url(../images//icon-instagram.svg);
+}
+.icon-telegram {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url(../images//icon-telegram.svg);
+}
+
+@keyframes shiny-btn {
+  0% {
+    transform: scale(0) rotate(45deg);
+    opacity: 0;
+  }
+  80% {
+    transform: scale(0) rotate(45deg);
+    opacity: 0.5;
+  }
+  81% {
+    transform: scale(4) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(50) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0eg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes shake-with-delay {
+  0% {
+    transform: translate(0, 0);
+  }
+  1.78571% {
+    transform: translate(5px, 0);
+  }
+  3.57143% {
+    transform: translate(0, 0);
+  }
+  5.35714% {
+    transform: translate(5px, 0);
+  }
+  7.14286% {
+    transform: translate(0, 0);
+  }
+  8.92857% {
+    transform: translate(5px, 0);
+  }
+  10.71429% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
