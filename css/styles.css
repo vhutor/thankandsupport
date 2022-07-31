@@ -17,9 +17,9 @@ body {
   margin: 0;
   padding: 0;
   color: #454545;
-  font-family: "Pangolin", cursive;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 20px;
   letter-spacing: 0.04em;
 }
 
@@ -178,12 +178,16 @@ header {
 
 #info-section h1 {
   text-align: center;
+  margin-bottom: 20px;
+}
+#info-section p {
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 @media screen and (max-width: 768px) {
   #info-section h1 {
     font-size: 34px;
-    margin-bottom: 10px;
   }
 }
 
@@ -342,7 +346,7 @@ header {
   width: 30px;
   height: 100%;
   background-color: #fff;
-  animation: shiny-btn 5s ease-in-out infinite;
+  /* animation: shiny-btn 5s ease-in-out infinite; */
 }
 .shine-btn:active {
   box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.3),
