@@ -3,9 +3,9 @@ html {
   scroll-behavior: smooth;
 }
 
-/* * {
+* {
   outline: 1px solid tomato;
-} */
+}
 
 *,
 *::before,
@@ -113,7 +113,6 @@ header {
 }
 
 .support-btn {
-  display: flex;
   align-items: center;
   text-align: center;
   padding: 20px;
@@ -124,6 +123,12 @@ header {
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
+}
+
+.fill-form-btn {
+  display: block;
+  margin: 0 auto;
+  max-width: 400px;
 }
 
 .support-btn:hover {
@@ -197,7 +202,13 @@ header {
   padding: 40px 0;
   margin: 0 auto;
   font-size: 36px;
+}
+
+.info-text span {
   font-weight: 600;
+}
+.info-text p {
+  margin-bottom: 15px;
 }
 
 @media screen and (max-width: 768px) {
@@ -262,9 +273,16 @@ header {
 }
 
 .mono-icon {
-  width: 200px;
+  margin: 15px auto;
+  width: 130px;
   height: auto;
-  animation: shake-with-delay 3s ease-in-out infinite;
+  animation: heart-beat 4s ease-in-out infinite;
+}
+@media screen and (max-width: 768px) {
+  .mono-icon {
+    margin: 5px auto;
+    width: 80px;
+  }
 }
 
 .mono-icon:hover {
@@ -449,5 +467,32 @@ header {
   }
   100% {
     transform: translate(0, 0);
+  }
+}
+
+@keyframes heart-beat {
+  0% {
+    transform: scale(1);
+  }
+  1.78571% {
+    transform: scale(1.05);
+  }
+  3.57143% {
+    transform: scale(1);
+  }
+  5.35714% {
+    transform: scale(1.05);
+  }
+  7.14286% {
+    transform: scale(1);
+  }
+  8.92857% {
+    transform: scale(1);
+  }
+  10.71429% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
   }
 }
