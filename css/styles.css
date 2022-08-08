@@ -66,7 +66,7 @@ header {
   width: 100%;
   max-width: 2000px;
   padding: 15px 40px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
   align-items: center;
   justify-content: space-between;
   box-shadow: 0px 5px 17px 4px rgba(0, 0, 0, 0.3);
@@ -80,21 +80,27 @@ header {
   }
 }
 
-.team-link {
+nav {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+}
+
+.nav-link {
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 150px;
   height: 70px;
-  margin-right: 50px;
   font-weight: 600;
 }
-
-@media screen and (max-width: 768px) {
-  .team-link {
-    display: none;
-  }
+.nav-link:not(:last-child) {
+  margin-right: 50px;
 }
 
 .heart-icon {
@@ -199,9 +205,10 @@ header {
 .info-text {
   display: block;
   max-width: 70%;
-  padding: 40px 0;
+  padding-bottom: 20px;
   margin: 0 auto;
   font-size: 36px;
+  color: #000;
 }
 
 .info-text span {
@@ -220,13 +227,18 @@ header {
   }
 }
 
-.info-text h2 {
+.info-text h2,
+.info-text h3 {
   text-align: center;
+  margin-bottom: 15px;
 }
 
 .info-text ul {
   max-width: fit-content;
   margin: 0 auto;
+}
+.info-text li {
+  margin-top: 10px;
 }
 
 .video-container {
@@ -253,18 +265,8 @@ header {
   }
 }
 
-#support-section {
+#t-shirt {
   background-color: #c0bd92;
-  color: black;
-}
-
-#support-section h1 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-#support-section li {
-  margin-top: 10px;
 }
 
 .mono-link {
@@ -289,15 +291,68 @@ header {
   animation: shake 1.5s ease-in-out infinite;
 }
 
-.donation-block {
-  max-width: 700px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 20px auto 0 auto;
+#giftbox {
+  padding-top: 100px;
 }
 
-#contacts-section {
+@media screen and (max-width: 768px) {
+  #giftbox {
+    padding-top: 85px;
+  }
+}
+
+.giftbox-banner {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images//giftbox.jpg);
+}
+
+.giftbox-info {
+  background-color: #fff;
+  display: block;
+  max-width: 70%;
+  margin: 0 auto;
+  font-size: 36px;
+  color: #000;
+  text-align: center;
+}
+
+.giftbox-info ul {
+  max-width: fit-content;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .giftbox-info {
+    min-width: 90%;
+    padding: 20px 0;
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+.giftbox-info h2 {
+  margin-bottom: 15px;
+}
+
+.giftbox-info li {
+  margin-bottom: 10px;
+  font-size: 30px;
+  text-align: start;
+}
+
+.giftbox-items {
+  margin: 20px 0 15px;
+  font-weight: 600;
+  text-align: center;
+}
+
+#lottery {
+  background-color: #c0bd92;
+  padding: 20px 0;
+}
+
+#contacts {
   padding: 40px;
   text-align: center;
 }
@@ -309,7 +364,7 @@ header {
   flex-wrap: wrap;
 }
 
-#contacts-section li {
+#contacts li {
   max-width: 200px;
   margin-bottom: 20px;
 }
