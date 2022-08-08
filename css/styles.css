@@ -336,6 +336,7 @@ nav {
 }
 
 .giftbox-info li {
+  display: flex;
   margin-bottom: 10px;
   font-size: 30px;
   text-align: start;
@@ -345,6 +346,17 @@ nav {
   margin: 20px 0 15px;
   font-weight: 600;
   text-align: center;
+}
+
+.ua-icon {
+  display: block;
+  content: "";
+  min-width: 38px;
+  height: 38px;
+  margin-right: 5px;
+  background-image: url(../images/ua.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #lottery {
