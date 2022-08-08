@@ -364,6 +364,12 @@ nav {
   padding: 20px 0;
 }
 
+.or-element {
+  text-align: center;
+  margin: 20px 0;
+  font-weight: 600;
+}
+
 #contacts {
   padding: 40px;
   text-align: center;
@@ -393,12 +399,14 @@ nav {
 }
 .img1 {
   background-image: url(../images//Lera.jpg);
+  background-position: 0 -40px;
 }
 .img2 {
-  background-position: 0 -55px;
+  background-position: 0 -70px;
   background-image: url(../images//Vlad.jpg);
 }
 .img3 {
+  background-position: 0 -50px;
   background-image: url(../images//Orysia.jpg);
 }
 
@@ -414,7 +422,7 @@ nav {
 .icons-list {
   display: flex;
   justify-content: space-between;
-  width: 100px;
+  width: 150px;
   margin: 10px auto;
 }
 
@@ -469,6 +477,22 @@ nav {
 }
 
 .icon-telegram:hover {
+  box-shadow: 0 0 0 0 rgb(60, 60, 60), inset 5px 5px 3px 0px rgb(60, 60, 60);
+  transition: box-shadow 0.4s;
+}
+.icon-facebook {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-size: contain;
+  background-image: url(../images/Facebook.svg);
+  box-shadow: 5px 5px 3px 0px rgb(60, 60, 60), inset 0 0 0 0 rgb(60, 60, 60);
+  transition: box-shadow 0.3s;
+}
+
+.icon-facebook:hover {
   box-shadow: 0 0 0 0 rgb(60, 60, 60), inset 5px 5px 3px 0px rgb(60, 60, 60);
   transition: box-shadow 0.4s;
 }
