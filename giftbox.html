@@ -23,14 +23,29 @@
   </head>
   <body>
     <header>
+      <a class="heart-icon" href="index.html"><img src="./images/military2.svg" /></a>
       <nav>
         <a class="nav-link" href="./index.html">Футболки</a>
-        <!-- <a class="nav-link" href="./giftbox.html">Набори</a> -->
+        <a class="nav-link active" href="./giftbox.html">Набори</a>
         <a class="nav-link" href="#contacts">Контакти</a>
       </nav>
 
-      <a class="heart-icon" href="index.html"><img src="./images/military2.svg" /></a>
-      <a class="support-btn" href="#lottery">Набір за донат</a>
+      <a class="support-btn hide" href="#lottery">Набір за донат</a>
+
+      <button class="burger-btn" type="button">
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
+
+      <div class="menu">
+        <div class="menu-links">
+          <a class="nav-link" href="./index.html">Футболки</a>
+          <a class="nav-link" href="./giftbox.html">Набори</a>
+          <a class="nav-link" href="#contacts">Контакти</a>
+        </div>
+        <a class="support-btn" href="#lottery">Набір за донат</a>
+      </div>
     </header>
     <section id="giftbox">
       <div class="banner giftbox-banner"></div>
@@ -165,5 +180,7 @@
         </li>
       </ul>
     </section>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>

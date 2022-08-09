@@ -23,12 +23,27 @@
     <header>
       <a class="heart-icon" href="index.html"><img src="./images/military2.svg" /></a>
       <nav>
-        <!-- <a class="nav-link" href="./#t-shirt">Футболки</a> -->
+        <a class="nav-link active" href="#t-shirt">Футболки</a>
         <a class="nav-link" href="./giftbox.html">Набори</a>
-        <a class="nav-link" href="./#contacts">Контакти</a>
+        <a class="nav-link" href="#contacts">Контакти</a>
       </nav>
 
-      <a class="support-btn" href="./giftbox.html">Подарункові набори</a>
+      <a class="support-btn hide" href="#t-shirt">Подякувати та підтримати</a>
+
+      <button class="burger-btn" type="button">
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
+
+      <div class="menu">
+        <div class="menu-links">
+          <a class="nav-link" href="./index.html">Футболки</a>
+          <a class="nav-link" href="./giftbox.html">Набори</a>
+          <a class="nav-link" href="#contacts">Контакти</a>
+        </div>
+        <a class="support-btn" href="#t-shirt">Подякувати та підтримати</a>
+      </div>
     </header>
     <section id="banner-section">
       <div class="banner"></div>
@@ -175,5 +190,7 @@
         </li>
       </ul>
     </section>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>
