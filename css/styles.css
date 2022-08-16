@@ -105,6 +105,7 @@ nav {
   height: 100px;
   font-weight: 600;
   transition: all 0.2s linear;
+  text-align: center;
 }
 
 .nav-link:hover,
@@ -277,13 +278,21 @@ nav {
 
 .mono-link {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 10px auto;
+  background-color: #683db1;
+  max-width: 250px;
+}
+
+.mono-link:hover {
+  background-color: #5b379a;
 }
 
 .mono-icon {
-  margin: 15px auto;
-  width: 130px;
+  width: 50px;
   height: auto;
+  margin-left: 10px;
   animation: heart-beat 4s ease-in-out infinite;
 }
 @media screen and (max-width: 768px) {
