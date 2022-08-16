@@ -273,7 +273,15 @@ nav {
 }
 
 #t-shirt {
-  background-color: #c0bd92;
+  /* background-color: #c0bd92; */
+  background-color: #a6a063;
+  padding: 100px 0;
+}
+
+@media screen and (max-width: 768px) {
+  #t-shirt {
+    padding: 60px 0;
+  }
 }
 
 .mono-link {
@@ -374,15 +382,16 @@ nav {
   background-repeat: no-repeat;
 }
 
-#lottery {
-  background-color: #c0bd92;
-  padding: 20px 0;
+#get-one {
+  /* background-color: #c0bd92; */
+  background-color: #a6a063;
+  padding: 100px 0;
 }
 
-.or-element {
-  text-align: center;
-  margin: 20px 0;
-  font-weight: 600;
+@media screen and (max-width: 768px) {
+  #get-one {
+    padding: 60px 0;
+  }
 }
 
 #contacts {
