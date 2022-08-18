@@ -451,6 +451,10 @@ nav {
   margin: 10px auto;
 }
 
+.icons-list-two-items {
+  width: 95px;
+}
+
 .shine-btn {
   overflow: hidden;
   transition: all 0.3s ease;
@@ -520,6 +524,123 @@ nav {
 .icon-facebook:hover {
   box-shadow: 0 0 0 0 rgb(60, 60, 60), inset 5px 5px 3px 0px rgb(60, 60, 60);
   transition: box-shadow 0.4s;
+}
+
+#partners {
+  padding: 60px;
+  background-color: #a6a063;
+}
+
+@media screen and (max-width: 700px) {
+  #partners {
+    padding: 40px 0;
+  }
+}
+
+#partners h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.partners-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 960px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .partners-list {
+    width: fit-content;
+    max-width: 100%;
+  }
+}
+
+.partner-card {
+  display: flex;
+  width: 450px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 25px;
+  border-radius: 15px;
+  margin: 0 auto 30px;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .partner-card {
+    width: 375px;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto 15px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .partner-card {
+    border-radius: 0;
+  }
+}
+
+.partner-card div {
+  display: flex;
+  margin-left: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1000px) {
+  .partners-list div {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.partner-card .icons-list {
+  margin: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .partner-card .icons-list {
+    margin: 0 auto;
+  }
+}
+
+.partner-img {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-size: cover;
+  background-position: 0 0px;
+  background-repeat: no-repeat;
+}
+
+.partner-name {
+  font-size: 30px;
+  line-height: 1;
+  font-weight: 600;
+}
+.partner-desc {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.partner1 {
+  background-image: url(../images/withme-logo.jpg);
+}
+.partner2 {
+  background-image: url(../images/golka-logo.png);
+  outline: 2px solid #3db7c4;
+}
+
+.partner3 {
+  background-image: url(../images/Oksana-Lomaga2.jpg);
+  outline: 1px solid #696969;
+}
+.partner4 {
+  background-image: url(../images/Bogdan-Manchur.jpg);
 }
 
 @keyframes shiny-btn {
