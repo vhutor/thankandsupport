@@ -125,6 +125,23 @@ nav {
   }
 }
 
+.language-switcher {
+  width: 60px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 700;
+  outline: none;
+  color: #696969;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 1000px) {
+  .language-switcher {
+    margin-right: 70px;
+  }
+}
+
 .support-btn {
   align-items: center;
   text-align: center;
@@ -218,7 +235,7 @@ nav {
   color: #000;
 }
 
-.info-text span {
+.info-text span:first-child {
   font-weight: 600;
 }
 .info-text p {
@@ -609,7 +626,7 @@ nav {
 .partner-img {
   content: "";
   display: block;
-  width: 100px;
+  min-width: 100px;
   height: 100px;
   border-radius: 50px;
   background-size: cover;
@@ -622,9 +639,19 @@ nav {
   line-height: 1;
   font-weight: 600;
 }
+@media screen and (max-width: 380px) {
+  .partner-name {
+    max-width: 200px;
+  }
+}
 .partner-desc {
   font-size: 20px;
   margin: 10px 0;
+}
+@media screen and (max-width: 768px) {
+  .partner-desc {
+    max-width: 200px;
+  }
 }
 
 .partner1 {

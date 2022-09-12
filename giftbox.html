@@ -25,12 +25,20 @@
     <header>
       <a class="heart-icon" href="index.html"><img src="./images/military2.svg" /></a>
       <nav>
-        <a class="nav-link" href="./index.html">Футболки</a>
-        <a class="nav-link active" href="./giftbox.html">Подарункові набори</a>
-        <a class="nav-link" href="#contacts">Контакти</a>
+        <a class="nav-link" href="./index.html" data-lang="nav-tshirt">Футболки</a>
+        <a class="nav-link active" href="./giftbox.html" data-lang="nav-giftbox"
+          >Подарункові набори</a
+        >
+        <a class="nav-link" href="#contacts" data-lang="nav-contacts">Контакти</a>
       </nav>
+      <select class="language-switcher" id="language-switcher">
+        <option value="ua">Укр</option>
+        <option value="en">EN</option>
+      </select>
 
-      <a class="support-btn hide" href="#get-one">Набір за донат</a>
+      <a class="support-btn hide" href="#get-one" data-lang="giftbox-for-donate"
+        >Набір за донат</a
+      >
 
       <button class="burger-btn" type="button">
         <div></div>
@@ -40,40 +48,66 @@
 
       <div class="menu">
         <div class="menu-links">
-          <a class="nav-link" href="./index.html">Футболки</a>
-          <a class="nav-link" href="./giftbox.html">Подарункові набори</a>
-          <a class="nav-link" href="#contacts">Контакти</a>
+          <a class="nav-link" href="./index.html" data-lang="nav-tshirt">Футболки</a>
+          <a class="nav-link" href="./giftbox.html" data-lang="nav-giftbox"
+            >Подарункові набори</a
+          >
+          <a class="nav-link" href="#contacts" data-lang="nav-contacts">Контакти</a>
         </div>
-        <a class="support-btn" href="#get-one">Набір за донат</a>
+        <a class="support-btn" href="#get-one" data-lang="giftbox-for-donate"
+          >Набір за донат</a
+        >
       </div>
     </header>
     <section id="giftbox">
       <div class="banner giftbox-banner"></div>
       <div class="giftbox-info">
-        <h2>Подарунковий набір</h2>
-        <p>
+        <h2 data-lang="giftbox">Подарунковий набір</h2>
+        <p data-lang="giftbox-desc">
           Спеціально з нагоди свят ми створили особливий подарунковий набір. Отримавши
           його, ти не тільки потішиш себе та близьких, а й підтримаєш ЗСУ, чим ще більше
           наблизиш нашу Перемогу!
         </p>
-        <p class="giftbox-items">До складу набору входять:</p>
+        <p class="giftbox-items" data-lang="giftbox-items">До складу набору входять:</p>
         <ul>
-          <li><span class="ua-icon"></span>Футболка з вишивкою</li>
-          <li><span class="ua-icon"></span>Прапор України</li>
-          <li><span class="ua-icon"></span>Марки "Русскій воєнний корабль … ВСЬО!"</li>
-          <li><span class="ua-icon"></span>Горнятко</li>
-          <li><span class="ua-icon"></span>Хендмейд іграшка</li>
-          <li><span class="ua-icon"></span>Пряники з передбаченням</li>
-          <li><span class="ua-icon"></span>Чоколядка</li>
+          <li>
+            <span class="ua-icon"></span>
+            <p data-lang="tshirt">Футболка з вишивкою</p>
+          </li>
+          <li>
+            <span class="ua-icon"></span>
+            <p data-lang="flag">Прапор України</p>
+          </li>
+          <li>
+            <span class="ua-icon"></span>
+            <p data-lang="postmarks">Марки</p>
+          </li>
+          <li>
+            <span class="ua-icon"></span>
+            <p data-lang="cup">Горнятко</p>
+          </li>
+          <li>
+            <span class="ua-icon"></span>
+            <p data-lang="toy">Хендмейд іграшка</p>
+          </li>
+          <li>
+            <span class="ua-icon"></span>
+            <p data-lang="gingerbread">Пряники з передбаченням</p>
+          </li>
+          <li>
+            <span class="ua-icon"></span>
+            <p data-lang="chocolate">Чоколядка</p>
+          </li>
         </ul>
       </div>
     </section>
     <section id="get-one">
       <div class="info-text">
-        <h3>Як отримати подарунковий набір?</h3>
+        <h3 data-lang="get-giftbox-heading">Як отримати подарунковий набір?</h3>
         <ul>
           <li>
-            <span>Крок 1:</span> Закинь в моно банку 1500грн.
+            <span data-lang="step1">Крок 1:</span>
+            <span data-lang="giftbox-step1">Закинь в моно банку 1500грн.</span>
             <a
               class="support-btn mono-link"
               href="https://send.monobank.ua/jar/3Z68K7PY26"
@@ -83,29 +117,30 @@
             </a>
           </li>
           <li>
-            <span>Крок 2:</span> Надішли організаторам скріншот успішного донату, щоб ми
-            змогли з тобою зв'язатись для уточнення деталей.
+            <span data-lang="step2">Крок 2:</span>
+            <span data-lang="giftbox-step2"
+              >Надішли організаторам скріншот успішного донату, щоб ми змогли з тобою
+              зв'язатись для уточнення деталей.</span
+            >
           </li>
           <li>
-            <span>Крок 3:</span> Як тільки твій подарунковий набір буде готовий -
-            відправимо тобі поштою.
+            <span data-lang="step3">Крок 3:</span>
+            <span data-lang="giftbox-step3"
+              >Як тільки твій подарунковий набір буде готовий - відправимо тобі
+              поштою.</span
+            >
           </li>
-          <!-- <p class="or-element">АБО</p>
-          <p>
-            Напиши організаторам, щоб дізнатись, як гарантовано отримати свій подарунковий
-            набір!
-          </p> -->
         </ul>
       </div>
     </section>
     <section id="contacts">
-      <h3>Організатори</h3>
-      <p>Пишіть нам з будь-яких питань</p>
+      <h3 data-lang="organizers">Організатори</h3>
+      <p data-lang="contact-us">Пишіть нам з будь-яких питань</p>
       <ul class="contacts-list">
         <li>
           <span class="contact-img img1"></span>
           <div>
-            <p class="contact-name">Валерія</p>
+            <p class="contact-name" data-lang="valery">Валерія</p>
             <ul class="icons-list">
               <li>
                 <a
@@ -130,7 +165,7 @@
         <li>
           <span class="contact-img img2"></span>
           <div>
-            <p class="contact-name">Влад</p>
+            <p class="contact-name" data-lang="vlad">Влад</p>
             <ul class="icons-list">
               <li>
                 <a
@@ -159,7 +194,7 @@
         <li>
           <span class="contact-img img3"></span>
           <div>
-            <p class="contact-name">Орися</p>
+            <p class="contact-name" data-lang="orysia">Орися</p>
             <ul class="icons-list">
               <li>
                 <a
@@ -188,7 +223,7 @@
       </ul>
     </section>
     <section id="partners">
-      <h3>Наші партнери</h3>
+      <h3 data-lang="partners">Наші партнери</h3>
       <ul class="partners-list">
         <li class="partner-card">
           <span class="partner-img partner1"></span>
@@ -224,7 +259,7 @@
           <span class="partner-img partner2"></span>
           <div>
             <p class="partner-name">Golka service</p>
-            <p class="partner-desc">Сервіс вишивки для бізнесу</p>
+            <p class="partner-desc" data-lang="golka-desc">Сервіс вишивки для бізнесу</p>
             <ul class="icons-list">
               <li>
                 <a
@@ -253,8 +288,8 @@
         <li class="partner-card">
           <span class="partner-img partner3"></span>
           <div>
-            <p class="partner-name">Оксана Ломага</p>
-            <p class="partner-desc">Фотографка, дизайнерка</p>
+            <p class="partner-name" data-lang="oksana-lomaha">Оксана Ломага</p>
+            <p class="partner-desc" data-lang="lamaha-desc">Фотографиня, дизайнерка</p>
             <ul class="icons-list">
               <li>
                 <a
@@ -283,8 +318,8 @@
         <li class="partner-card">
           <span class="partner-img partner4"></span>
           <div>
-            <p class="partner-name">Богдан Манчур</p>
-            <p class="partner-desc">Відеограф</p>
+            <p class="partner-name" data-lang="bohdan-manchur">Богдан Манчур</p>
+            <p class="partner-desc" data-lang="manchur-desc">Відеограф</p>
             <ul class="icons-list icons-list-two-items">
               <li>
                 <a
@@ -307,5 +342,6 @@
     </section>
 
     <script src="./js/menu.js"></script>
+    <script type="module" src="./js/lang.js"></script>
   </body>
 </html>
