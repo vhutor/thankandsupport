@@ -27,7 +27,6 @@ window.addEventListener("load", () => {
 
   if (lang) {
     translate(lang);
+    switchLang.value = lang;
   }
-
-  switchLang.value = lang;
 });
