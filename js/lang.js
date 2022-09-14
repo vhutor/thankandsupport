@@ -3,30 +3,30 @@ import en from "../locals/en.json" assert {type: "json"};
 
 let currentLang = ua;
 
-const switchLang = document.querySelector(".language-switcher");
-const langText = document.querySelectorAll("[data-lang]");
+window.addEventListener("DOMContentLoaded", (event) => {
+  const switchLang = document.querySelector(".language-switcher");
+  const langText = document.querySelectorAll("[data-lang]");
 
-const translate = (lang) => {
-  localStorage.setItem("lang", lang);
-  const source = lang === "ua" ? ua : en;
-  langText.forEach((el) => {
-    el.innerText = source[el.dataset.lang];
+  const translate = (lang) => {
+    localStorage.setItem("lang", lang);
+    const source = lang === "ua" ? ua : en;
+    langText.forEach((el) => {
+      el.innerText = source[el.dataset.lang];
+    });
+
+    currentLang = lang;
+  };
+
+  switchLang.addEventListener("change", (e) => {
+    translate(e.target.value);
   });
 
-  currentLang = lang;
-  // document.body.classList.toggle("lang-ua", lang === "ua");
-  // document.body.classList.toggle("lang-en", lang === "en");
-};
+  window.addEventListener("load", () => {
+    const lang = localStorage.getItem("lang");
 
-switchLang.addEventListener("change", (e) => {
-  translate(e.target.value);
-});
-
-window.addEventListener("load", () => {
-  const lang = localStorage.getItem("lang");
-
-  if (lang) {
-    translate(lang);
-    switchLang.value = lang;
-  }
+    if (lang) {
+      translate(lang);
+      switchLang.value = lang;
+    }
+  });
 });
