@@ -3,7 +3,7 @@ import en from "../locals/en.json" assert {type: "json"};
 
 let currentLang = ua;
 
-const switchLang = document.querySelector("#language-switcher");
+const switchLang = document.querySelector(".language-switcher");
 const langText = document.querySelectorAll("[data-lang]");
 
 const translate = (lang) => {
