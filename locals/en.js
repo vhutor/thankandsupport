@@ -1,23 +1,23 @@
 const en = {
-  "nav-tshirt": "T-shirt",
-  "nav-giftbox": "Giftbox",
+  "nav-tshirt": "T-shirts",
+  "nav-giftbox": "Giftboxes",
   "nav-contacts": "Contacts",
   "support-btn": "Thank and support",
-  "main-title": "Thank and Support Ukrainian Army!",
+  "main-title": "Thank and Support the Ukrainian Army!",
   "shirt-desc1":
-    "We have designed exclusive T-shirt with embroidered camouflage heart so that everyone can show their gratitude and respect to Ukrainian Defenders just by putting the T-shirt on for a walk in the city.",
+    "We have designed exclusive T-shirts with an embroidered camouflage heart so that everyone can show their gratitude and respect to Ukrainian Defenders just by putting the T-shirt on for a walk in the city.",
   "shirt-desc2":
-    "100% of income will be spent to purchase the necessary equipment and gear for military unit #A4103 (ballistic helmets, drones, headphones, etc.)",
+    "100% of income will be used to purchase the necessary equipment and gear for the military unit #A4103 (ballistic helmets, drones, headphones, etc.)",
   "how-to-get-heading": "How to get a T-shirt?",
   step1: "Step 1:",
   step2: "Step 2:",
   step3: "Step 3:",
   step4: "Step 4:",
-  "step1-text": "Fill the form.",
-  "fill-form-btn": "To fill the form",
-  "step2-text": "Donate to mono-jar more than 700uah.",
-  "step3-text": "Send a screenshot of successful transaction to organizers",
-  "step4-text": "Once your T-shirt will be ready, we'll send it to you",
+  "step1-text": "Fill in the form.",
+  "fill-form-btn": "To fill in the form",
+  "step2-text": "Make a donation of over 700 UAH to a Monobank account.",
+  "step3-text": "Send a screenshot of your successful transaction to the organizers",
+  "step4-text": "Once your T-shirt is ready, we'll mail it to you.",
   organizers: "The Org Team",
   "contact-us": "Happy to answer any questions you have",
   valery: "Valery",
@@ -42,10 +42,10 @@ const en = {
   gingerbread: "Fortune Gingerbread cookies",
   chocolate: "Chocolate",
   "get-giftbox-heading": "How to get a giftbox?",
-  "giftbox-step1": "Donate to mono-jar 1500uah.",
+  "giftbox-step1": " Make a donation of over 1500 UAH to a Monobank account.",
   "giftbox-step2":
-    "Send a screenshot of successful transaction to organizers, so we could get in touch with you.",
-  "giftbox-step3": "Once your giftbox will be ready, we'll send it to you.",
+    "Send a screenshot of your successful transaction to the organizers, so we could get in touch with you.",
+  "giftbox-step3": "Once your giftbox is ready, we'll mail it to you.",
 };
 
 export default en;
