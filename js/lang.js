@@ -1,5 +1,5 @@
-import ua from "../locals/ua.json" assert {type: "json"};
-import en from "../locals/en.json" assert {type: "json"};
+import ua from "../locals/ua.js";
+import en from "../locals/en.js";
 
 let currentLang = ua;
 
