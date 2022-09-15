@@ -3,30 +3,28 @@ import en from "../locals/en.json" assert {type: "json"};
 
 let currentLang = ua;
 
-window.addEventListener("DOMContentLoaded", (event) => {
-  const switchLang = document.querySelector(".language-switcher");
-  const langText = document.querySelectorAll("[data-lang]");
+const switchLang = document.querySelector("#language-switcher");
+const langText = document.querySelectorAll("[data-lang]");
 
-  const translate = (lang) => {
-    localStorage.setItem("lang", lang);
-    const source = lang === "ua" ? ua : en;
-    langText.forEach((el) => {
-      el.innerText = source[el.dataset.lang];
-    });
-
-    currentLang = lang;
-  };
-
-  switchLang.addEventListener("change", (e) => {
-    translate(e.target.value);
+const translate = (lang) => {
+  localStorage.setItem("lang", lang);
+  const source = lang === "ua" ? ua : en;
+  langText.forEach((el) => {
+    el.innerText = source[el.dataset.lang];
   });
 
-  window.addEventListener("load", () => {
-    const lang = localStorage.getItem("lang");
+  currentLang = lang;
+};
 
-    if (lang) {
-      translate(lang);
-      switchLang.value = lang;
-    }
-  });
+switchLang.addEventListener("change", (e) => {
+  translate(e.target.value);
+});
+
+window.addEventListener("load", () => {
+  const lang = localStorage.getItem("lang");
+
+  if (lang) {
+    translate(lang);
+    switchLang.value = lang;
+  }
 });
