@@ -6,8 +6,8 @@ const en = {
   "main-title": "Thank and Support the Ukrainian Army!",
   "shirt-desc1":
     "We have designed exclusive T-shirts with an embroidered camouflage heart so that everyone can show their gratitude and respect to Ukrainian Defenders just by putting the T-shirt on for a walk in the city.",
-  "shirt-desc2":
-    "100% of income will be used to purchase the necessary equipment and gear for the military unit #A4103 (ballistic helmets, drones, headphones, etc.)",
+  desc2:
+    "100% of income will be used to purchase an Autel Evo II Dual 640 T drone for the military unit #A4103.",
   "how-to-get-heading": "How to get a T-shirt?",
   step1: "Step 1:",
   step2: "Step 2:",
@@ -46,6 +46,16 @@ const en = {
   "giftbox-step2":
     "Send a screenshot of your successful transaction to the organizers, so we could get in touch with you.",
   "giftbox-step3": "Once your giftbox is ready, we'll mail it to you.",
+
+  "nav-hoodie": "Hoodies",
+  hoodies: "Hoodies",
+  "get-hoodie-heading": "How to get a Hoodie?",
+  "hoodie-desc":
+    "In summer we wore T-shirts with grateful camouflage hearts, and now that autumn has come let’s get warmer wearing cozy hoodies embroidered with your gratitude to our Defenders.",
+  "hoodie-step1": "Fill in the form.",
+  "hoodie-step2": "Make a donation of over 1200 UAH to a Monobank account.",
+  "hoodie-step3": "Send a screenshot of your successful transaction to the organizers",
+  "hoodie-step4": "Once your hoodie is ready, we'll mail it to you.",
 };
 
 export default en;

@@ -289,14 +289,16 @@ nav {
   }
 }
 
-#t-shirt {
+#t-shirt,
+#hoodies {
   /* background-color: #c0bd92; */
   background-color: #a6a063;
   padding: 100px 0;
 }
 
 @media screen and (max-width: 768px) {
-  #t-shirt {
+  #t-shirt,
+  #hoodies {
     padding: 60px 0;
   }
 }
@@ -331,12 +333,14 @@ nav {
   animation: shake 1.5s ease-in-out infinite;
 }
 
-#giftbox {
+#giftbox,
+#hoodie {
   padding-top: 100px;
 }
 
 @media screen and (max-width: 768px) {
-  #giftbox {
+  #giftbox,
+  #hoodie {
     padding-top: 85px;
   }
 }
@@ -346,6 +350,13 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   background-image: url(../images//giftbox.jpg);
+}
+
+.hoodie-banner {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/hoodies-banner2.jpg);
 }
 
 .giftbox-info {
