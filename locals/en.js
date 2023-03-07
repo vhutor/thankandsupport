@@ -53,7 +53,7 @@ const en = {
   "hoodie-desc":
     "In summer we wore T-shirts with grateful camouflage hearts, and now that autumn has come let’s get warmer wearing cozy hoodies embroidered with your gratitude to our Defenders.",
   "hoodie-step1": "Fill in the form.",
-  "hoodie-step2": "Make a donation of over 1200 UAH to a Monobank account.",
+  "hoodie-step2": "Make a donation of over 1300 UAH to a Monobank account.",
   "hoodie-step3": "Send a screenshot of your successful transaction to the organizers",
   "hoodie-step4": "Once your hoodie is ready, we'll mail it to you.",
 };
