@@ -673,6 +673,7 @@ nav {
 }
 .partner3 {
   background-image: url(../images/hygge.jpg);
+  outline: 2px solid #f5cf51;
 }
 .partner4 {
   background-image: url(../images/Oksana-Lomaga2.jpg);
