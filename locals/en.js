@@ -6,8 +6,7 @@ const en = {
   "main-title": "Thank and Support the Ukrainian Army!",
   "shirt-desc1":
     "We have designed exclusive T-shirts with an embroidered camouflage heart so that everyone can show their gratitude and respect to Ukrainian Defenders just by putting the T-shirt on for a walk in the city.",
-  desc2:
-    "100% of income will be used to purchase an Autel Evo II Dual 640 T drone for the military unit #A4103.",
+  desc2: "100% of income will be used to purchase an Autel Evo II Dual 640 T drone for the military unit #A4103.",
   "how-to-get-heading": "How to get a T-shirt?",
   step1: "Step 1:",
   step2: "Step 2:",
@@ -25,6 +24,7 @@ const en = {
   orysia: "Orysia",
   partners: "Our partners",
   "golka-desc": "Embroidery services for business",
+  "hygge-desc": "A brand of basic clothing",
   "oksana-lomaha": "Oksana Lomaha",
   "lamaha-desc": "Photographer, designer",
   "bohdan-manchur": "Bogdan Manchur",
