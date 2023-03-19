@@ -6,8 +6,8 @@ const en = {
   "main-title": "Thank and Support the Ukrainian Army!",
   "shirt-desc1":
     "We have designed exclusive T-shirts with an embroidered camouflage heart so that everyone can show their gratitude and respect to Ukrainian Defenders just by putting the T-shirt on for a walk in the city.",
-  desc2: "100% of income will be used to purchase an Autel Evo II Dual 640 T drone for the military unit #A4103.",
-  "how-to-get-heading": "How to get a T-shirt?",
+  desc2:
+    "100% of income will be used to purchase DJI Mavic Fly More Combo and DJI RC Pro drones for A special detachment of the National Guard of Ukraine «Vega» and the 10th separate mountain assault brigade, artillery division.",
   step1: "Step 1:",
   step2: "Step 2:",
   step3: "Step 3:",
